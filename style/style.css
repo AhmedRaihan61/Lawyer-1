@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300&display=swap" rel="stylesheet');
+
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header section start */
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(49, 63, 131);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 30px 7px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+
+/* header section end */
+
+
+
+
+
+/* banner section start */
+.banner {
+    background-image: url(../image/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hg {
+    min-height: 500px;
+}
+
+.hg h2 {
+    font-size: 56px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.icon {
+    position: absolute;
+}
+
+.icon i {
+    position: relative;
+    bottom: 58px;
+    left: 545px;
+    color: #fff;
+    font-size: 25px;
+    animation: up-down 1.8s infinite linear;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(-80px);
+    }
+}
+
+/* banner section end */
+
+
+
+/* who we are section start */
+
+.who_we_are {
+    margin-top: 50px;
+}
+
+.heading {
+    padding-top: 85px;
+}
+
+.heading h1 {
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #33417c;
+}
+
+.heading h1::before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    top: 0;
+    left: 0;
+    background-color: #f05428;
+    transition: 1s all ease-in-out;
+}
+
+.heading:hover h1::before {
+    width: 40px;
+
+}
+
+.whoWeAre_container p {
+    font-family: 'Open Sans', sans-serif;
+    color: #bab5b2;
+}
+
+
+/* who we are section end */
+
+
+
+
+
+/* what we do secction start */
+
+.what_we_do {
+    background-position: right-bottum;
+    background-color: #f7f8f8;
+    background-image: url(../image/whatwedo_bg.png);
+    background-repeat: no-repeat;
+    background-size: 780px;
+    background-position: right bottom;
+    padding: 10px 0px;
+}
+
+.heading_two h1 {
+    text-transform: uppercase;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #3a1372;
+    font-size: 32px;
+}
+
+.heading_two {
+    padding: 35px 0;
+}
+
+.heading_two h1::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 5px;
+    top: 0;
+    left: 50%;
+    background-color: #f05428;
+    transition: 1s all ease-in-out;
+}
+
+.heading_two:hover h1::before {
+    width: 30%;
+    left: 25%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.what_we {
+    position: relative;
+}
+
+.what_we::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 97%;
+    height: 0%;
+    background-color: #4656a775;
+    transition: 1s ease-in-out;
+}
+
+.what_we:hover::before {
+    height: 100%;
+}
+
+.what_we:hover .what_we_content {
+    opacity: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.what_we_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    top: 85%;
+    left: 0%;
+    font-size: 21px;
+    color: #fff;
+    opacity: 0;
+}
+
+.what_we:hover .arrow {
+    opacity: 1;
+    left: 50%;
+}
+
+
+/* what we do secction end */

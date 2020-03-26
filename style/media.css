@@ -1,0 +1,8 @@
+@media (max-width: 575px) {
+    .hg h2{
+        font-size: 50px;
+    }
+    .icon i{
+        font-size: 10px;
+    }
+}
